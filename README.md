@@ -15,16 +15,12 @@ The project is structured into modular Jupyter Notebooks:
 
 The dataset used in this project includes structured tabular data containing both numerical and categorical features. Each row represents a sample (such as a product, house, customer, etc.), and the target variable is a continuous value we aim to predict using regression.
 
-- **Training Set**: Used for data exploration, feature engineering, and training the models.
-- **Test Set**: A separate dataset that undergoes the same transformation pipeline for unbiased evaluation.
+- **appartments_train**: Orginal train data from the teachers
+- **aparts_train**: Used for data exploration, feature engineering, and training the models.
+- **aparts_test**: Test subset with raw data (before handling missing values, feature engineering...)
+- **aparts_train_ready**: aparts_train ready for modelling (after data preprocessing, feature engineering...)
+- **aparts_test_ready**: Test subset after exactly the same processing pipeline as the train subset
+- **appartments_test** : Orginal test data from the teachers. The only dataset not to be in the Datasets folder
 
-> ℹ️ If your dataset is domain-specific (e.g., housing prices, medical data, retail sales), consider replacing this section with specific feature/column explanations.
 
-## ⚙️ Installation & Requirements
 
-Clone the repository and install the required dependencies:
-
-```bash
-git clone https://github.com/yourusername/yourproject.git
-cd yourproject
-pip install -r requirements.txt
